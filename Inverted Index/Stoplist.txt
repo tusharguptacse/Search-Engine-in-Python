@@ -1,0 +1,60 @@
+I created a stoplist by taking the top 50 words by term frequency, and manually removing
+some words which should not be present in the list.
+
+1. In the top 50 words by frequency, some words such as fuel, energy, power, water, world, heat and gas also appeared.
+It is due to the fact that our seed page was about sustainable energy, so it is natural that words
+related to energy appear high in frequency sorted list. 
+Then, I first checked if they appear in lesser number of documents than others, so that they may be removed
+easily, as they do not appear in a lot of documents. But, word like energy appeared in 766 of the 1000 documents.
+So, removing by idf logic was not possible. So, I manually removed them, and came up with a list of 44 stop words.
+
+
+The list of Stopwords is-
+
+Term	Term Frequency	Document Frequency	Tf / Df
+
+the	196641		998			197.0350701
+of	108017		996			108.4508032
+and	88629		991			89.43390515
+in	76824		985			77.99390863
+to	68786		987			69.69199595
+a	58606		986			59.43813387
+is	39981		982			40.71384929
+for	28230		956			29.5292887
+as	26981		940			28.70319149
+by	22107		957			23.10031348
+that	21185		926			22.87796976
+are	19872		896			22.17857143
+with	18811		927			20.29234088
+on	16433		915			17.95956284
+from	16129		907			17.78280044
+be	15802		878			17.9977221
+or	15096		863			17.49246813
+was	13894		832			16.69951923
+it	12315		911			13.51811196
+an	11606		916			12.67030568
+at	11328		885			12.8
+which	10536		885			11.90508475
+this	10397		852			12.20305164
+has	10015		872			11.48509174
+can	9154		791			11.57269279
+have	9142		817			11.18971848
+also	7700		863			8.922363847
+used	7229		741			9.755735493
+such	7097		796			8.915829146
+more	6972		826			8.440677966
+its	6918		820			8.436585366
+not	6613		788			8.39213198
+than	6519		787			8.283354511
+other	6113		800			7.64125
+use	5932		773			7.673997413
+were	5886		693			8.493506494
+been	5508		764			7.209424084
+their	5327		759			7.018445323
+one	4979		765			6.508496732
+may	4955		731			6.778385773
+new	4900		706			6.940509915
+most	4873		726			6.712121212
+
+
+ 
